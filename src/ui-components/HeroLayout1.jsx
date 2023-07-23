@@ -16,7 +16,6 @@ export default function HeroLayout1(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
     {
-      variantValues: { mode: "Dark" },
       overrides: {
         image: {},
         "LOREM IPSUM": {},
@@ -28,6 +27,7 @@ export default function HeroLayout1(props) {
         Left: {},
         HeroLayout1: {},
       },
+      variantValues: { mode: "Dark" },
     },
   ];
   const overrides = mergeVariantsAndOverrides(

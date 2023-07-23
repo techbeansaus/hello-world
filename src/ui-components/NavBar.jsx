@@ -13,10 +13,10 @@ import {
 import { Flex, Icon, Text } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
-  const homeOnClick = useNavigateAction({ type: "anchor", anchor: "/" });
+  const homeOnClick = useNavigateAction({ anchor: "/", type: "anchor" });
   const contactUsOnClick = useNavigateAction({
-    type: "anchor",
     anchor: "contactUs",
+    type: "anchor",
   });
   return (
     <Flex
