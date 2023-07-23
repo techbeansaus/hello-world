@@ -36,9 +36,9 @@ export default function HeroLayout1(props) {
   );
   return (
     <Flex
-      gap="-30px"
+      gap="-3px"
       direction="row"
-      width="2000px"
+      width="1173px"
       height="802px"
       justifyContent="center"
       alignItems="center"
@@ -66,7 +66,7 @@ export default function HeroLayout1(props) {
       <Flex
         gap="10px"
         direction="column"
-        width="1630px"
+        width="847px"
         height="unset"
         justifyContent="center"
         alignItems="center"
