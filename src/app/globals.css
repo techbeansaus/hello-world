@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
