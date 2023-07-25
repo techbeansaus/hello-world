@@ -36,9 +36,9 @@ export default function HeroLayout1(props) {
   );
   return (
     <Flex
-      gap="-3px"
+      gap="0"
       direction="row"
-      width="1173px"
+      width="1169px"
       height="802px"
       justifyContent="center"
       alignItems="center"
@@ -49,7 +49,7 @@ export default function HeroLayout1(props) {
       {...rest}
     >
       <Image
-        width="400px"
+        width="318px"
         height="unset"
         display="block"
         gap="unset"
@@ -59,8 +59,8 @@ export default function HeroLayout1(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
-        objectFit="contain"
-        src="https://helloworld-storage-731cb94133723-staging.s3.ap-southeast-2.amazonaws.com/public/babadeepsinghjishaheed.jpg?AWSAccessKeyId=ASIARVBGRUEA3JCWTW7B&Expires=1690107486&Signature=ihmh%2FcwSmvK1bOkrauRIhI%2BcVN0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEGIaDmFwLXNvdXRoZWFzdC0yIkcwRQIhAPltm%2BXgZ6xlb%2FQzUb%2BR7YGqmKS%2FOIUAQAnkTLnNFaf2AiBTIOVBg5Pc9BH3iBjza%2Bp6jS0FIl5oJkIfb%2B4U84vOryrrBAjr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAEaDDExMzg5NzQ4MDQ0OSIMS1DwdrpNSSP%2BQkG0Kr8Ea57oGACc9ulHFOzuA7x9xVustfh19YL%2BB46TShJJJoMAxgLbjaHZQOO%2BfY%2BbXwSv69dMcLkeMkOnIDjyN7s2Q8llRLrTIhJn7aJvxR6Z5am8QEhf79iHAp6mnIyzB%2F8gg9YwecFUJwTk1c1nrhC53FXtEoFCVkDpQjfwoNRcPvycLuWidkez1v%2Bnyt8R2Sx4DDV6cS08qV34fSBV%2Fvv4TEs9A7UxnXf3t1w0vH1KqSKxl%2BlpvRrg6YOWOA5SjCLQRPLJDukgn1TsbIuqn2hUwkqd4PvDkw2oiYuUuH5mS%2FTPfxatwst7wTCBesoCvYyl5BkCTuHUiS9AjCYFmD1Ov4i%2FT3cHtB%2FyFwiGKKeJpyq%2BOtcIfFkcT4Ej3pAdWGt2bJoTJGdD76sOZo2kjnW5UZ%2BDoJQPEePOrCw8Ew1Cu0AuAr4vz3sDPDBxBFZBrAZBCnjKCTMnKhicpThQ2nOBOcUQSp8sTFPDqxbaLYW2lG8K8wahnQdUgOMqNsKcrZ3MVLy4Uugo1kHelaUGKBH1F0igrMJ9c80LPN0C5zJFYcI2LmweCGIta%2FqgJAVQ32ztgr%2F%2FAqbciT8BqA9MfRWfNFBBnNQJKNTmXdiGp7Tt%2BM9IUiZDiuh5%2FBphlMBhGJ6jjRg37TzxBmVSXYo2xWO0WUUFcztMGYHEmmD32qJtaDKbMCW%2FrxhoWqD2dsWu%2F6vLIwpJVnbasybcjVGKxS4RyHc%2FtWsn7wZztVQNEjW59zo1CIiSAzIzqz4YwSOvFvgw%2FfnzpQY6hQIm4YtN2VbizoK09H%2B8V%2B4TFRI6lkkT7fqKgdOZ%2Bi1AP6uYw61DVhd0qFVgM%2BLLyDLST2B8rcivRCGNISJRy67Deo8MIY6SSUguRI8FrSa2lpb7Mbv95KZLFvZbUG%2FO1HcHYsdeyxXJBdBUU1NQ%2Ftvp5DD4lUmawdoszQlhj4PSEg43jqvMnMkRzRenKDX8BlPtBdkqmLFMfo7jxue4Atd0qwUDh3Sp7nVZblJl59lVqjMi8UofiW5SBmslJDs6VefNYfw2KvyUU9SVtrajlugkdxF4rVQTLNROxk3Ap0yAoq7TCcCE93CXk%2FypK2mICDoPmxY%2BxaEcNidG682Cur%2F7KkhehoM%3D"
+        objectFit="cover"
+        src="https://m.media-amazon.com/images/I/51pHG1lqFIL._SX300_SY300_QL70_FMwebp_.jpg"
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
