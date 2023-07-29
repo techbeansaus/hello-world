@@ -13,6 +13,9 @@ import {studioTheme} from "../ui-components";
 import {ProfileCard} from "../ui-components"
 import '@aws-amplify/ui-react/styles.css'
 import config from '../aws-exports'
+import awsconfig from "../aws-exports";
+
+Amplify.configure(awsconfig);
 
 export default function Home() {
   return (
