@@ -6,7 +6,13 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import { Requests } from "../models";
+import {
+  getOverrideProps,
+  useDataStoreCreateAction,
+  useStateMutationAction,
+} from "@aws-amplify/ui-react/internal";
+import { schema } from "../models/schema";
 import {
   Button,
   Flex,
@@ -15,7 +21,33 @@ import {
   TextField,
 } from "@aws-amplify/ui-react";
 export default function ContactUsNew(props) {
-  const { overrides, ...rest } = props;
+  const { requests, requestType, overrides, ...rest } = props;
+  const [
+    textFieldTwoNineSevenSixSixNineThreeSixValue,
+    setTextFieldTwoNineSevenSixSixNineThreeSixValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldTwoNineSevenSixSixNineThreeEightValue,
+    setTextFieldTwoNineSevenSixSixNineThreeEightValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldThreeSixSevenThreeTwoEightFourTwoValue,
+    setTextFieldThreeSixSevenThreeTwoEightFourTwoValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldTwoNineSevenSixSixNineThreeNineValue,
+    setTextFieldTwoNineSevenSixSixNineThreeNineValue,
+  ] = useStateMutationAction("");
+  const buttonOnClick = useDataStoreCreateAction({
+    fields: {
+      name: textFieldTwoNineSevenSixSixNineThreeSixValue,
+      phoneNumber: textFieldTwoNineSevenSixSixNineThreeEightValue,
+      emailAddress: textFieldThreeSixSevenThreeTwoEightFourTwoValue,
+      requestMessage: textFieldTwoNineSevenSixSixNineThreeNineValue,
+    },
+    model: Requests,
+    schema: schema,
+  });
   return (
     <Flex
       gap="24px"
@@ -136,6 +168,10 @@ export default function ContactUsNew(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldTwoNineSevenSixSixNineThreeSixValue}
+        onChange={(event) => {
+          setTextFieldTwoNineSevenSixSixNineThreeSixValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField29766936")}
       ></TextField>
       <TextField
@@ -149,6 +185,10 @@ export default function ContactUsNew(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldTwoNineSevenSixSixNineThreeEightValue}
+        onChange={(event) => {
+          setTextFieldTwoNineSevenSixSixNineThreeEightValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField29766938")}
       ></TextField>
       <TextField
@@ -162,6 +202,12 @@ export default function ContactUsNew(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldThreeSixSevenThreeTwoEightFourTwoValue}
+        onChange={(event) => {
+          setTextFieldThreeSixSevenThreeTwoEightFourTwoValue(
+            event.target.value
+          );
+        }}
         {...getOverrideProps(overrides, "TextField36732842")}
       ></TextField>
       <SelectField
@@ -175,6 +221,7 @@ export default function ContactUsNew(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={requestType?.requestType}
         {...getOverrideProps(overrides, "SelectField")}
       ></SelectField>
       <TextField
@@ -188,6 +235,10 @@ export default function ContactUsNew(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldTwoNineSevenSixSixNineThreeNineValue}
+        onChange={(event) => {
+          setTextFieldTwoNineSevenSixSixNineThreeNineValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField29766939")}
       ></TextField>
       <Button
@@ -199,6 +250,9 @@ export default function ContactUsNew(props) {
         isDisabled={false}
         variation="primary"
         children="Primary Button"
+        onClick={() => {
+          buttonOnClick();
+        }}
         {...getOverrideProps(overrides, "Button")}
       ></Button>
     </Flex>

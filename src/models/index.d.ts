@@ -6,6 +6,36 @@ import { LazyLoading, LazyLoadingDisabled, AsyncCollection, AsyncItem } from "@a
 
 
 
+type EagerRequestType = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<RequestType, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly requestType?: string | null;
+  readonly routeEmail?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyRequestType = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<RequestType, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly requestType?: string | null;
+  readonly routeEmail?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type RequestType = LazyLoading extends LazyLoadingDisabled ? EagerRequestType : LazyRequestType
+
+export declare const RequestType: (new (init: ModelInit<RequestType>) => RequestType) & {
+  copyOf(source: RequestType, mutator: (draft: MutableModel<RequestType>) => MutableModel<RequestType> | void): RequestType;
+}
+
 type EagerDepartment = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<Department, 'id'>;

@@ -1,3 +1,9 @@
+type RequestType @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  requestType: String
+  routeEmail: AWSEmail
+}
+
 type Department @model @auth(rules: [{allow: public}]) {
   id: ID!
   departmentName: String
@@ -24,4 +30,4 @@ type TeamMember @model @auth(rules: [{allow: public}]) {
   position: String
   departmentId: ID
   Departments: [Department] @manyToMany(relationName: "TeamMemberDepartment")
-}
+} 

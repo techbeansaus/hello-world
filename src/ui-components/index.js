@@ -7,6 +7,7 @@
 export { default as ActionCard } from "./ActionCard";
 export { default as Ampligram } from "./Ampligram";
 export { default as CommentCard } from "./CommentCard";
+export { default as ContactForm } from "./ContactForm";
 export { default as ContactUsNew } from "./ContactUsNew";
 export { default as DepartmentCreateForm } from "./DepartmentCreateForm";
 export { default as DepartmentUpdateForm } from "./DepartmentUpdateForm";
@@ -31,7 +32,8 @@ export { default as ProductCard } from "./ProductCard";
 export { default as ProductDetail } from "./ProductDetail";
 export { default as ProfileCard } from "./ProfileCard";
 export { default as ProfileCardCollection } from "./ProfileCardCollection";
-export { default as RequestsCreateForm } from "./RequestsCreateForm";
+export { default as RequestTypeCreateForm } from "./RequestTypeCreateForm";
+export { default as RequestTypeUpdateForm } from "./RequestTypeUpdateForm";
 export { default as RequestsUpdateForm } from "./RequestsUpdateForm";
 export { default as ReviewCard } from "./ReviewCard";
 export { default as SideBar } from "./SideBar";

@@ -2,7 +2,7 @@
 import "./globals.css";
 import { ThemeProvider } from "@aws-amplify/ui-react";
 import { Amplify } from "aws-amplify";
-import { MarketingFooter, NavBar } from "../ui-components"
+import { ContactForm, MarketingFooter, NavBar } from "../ui-components"
 import {HeroLayout1} from "../ui-components";
 import {ProfileCardCollection} from "../ui-components";
 import { ProfileCardProps } from "@/ui-components/ProfileCard";
@@ -21,7 +21,7 @@ export default function Home() {
 <HeroLayout1 width="100%"/>
 <br/><br/>
 <div className="contact-form-container" id="contactUs">
-<ContactUsNew/>
+<ContactForm/>
 </div>
 <MarketingFooter/>
     </AmplifyProvider>
