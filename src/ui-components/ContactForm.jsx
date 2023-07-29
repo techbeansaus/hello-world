@@ -59,7 +59,7 @@ export default function ContactForm(props) {
   };
   const validations = {
     name: [],
-    phoneNumber: [{ type: "Phone" }],
+    phoneNumber: [],
     emailAddress: [{ type: "Email" }],
     requestType: [],
     requestMessage: [],
@@ -172,7 +172,6 @@ export default function ContactForm(props) {
         label="Phone number"
         isRequired={false}
         isReadOnly={false}
-        type="tel"
         value={phoneNumber}
         onChange={(e) => {
           let { value } = e.target;

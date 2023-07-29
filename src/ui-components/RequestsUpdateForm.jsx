@@ -68,7 +68,7 @@ export default function RequestsUpdateForm(props) {
   React.useEffect(resetStateValues, [requestsRecord]);
   const validations = {
     name: [],
-    phoneNumber: [{ type: "Phone" }],
+    phoneNumber: [],
     emailAddress: [{ type: "Email" }],
     requestType: [],
     requestMessage: [],
@@ -182,7 +182,6 @@ export default function RequestsUpdateForm(props) {
         label="Phone number"
         isRequired={false}
         isReadOnly={false}
-        type="tel"
         value={phoneNumber}
         onChange={(e) => {
           let { value } = e.target;

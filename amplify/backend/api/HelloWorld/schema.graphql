@@ -14,7 +14,7 @@ type Department @model @auth(rules: [{allow: public}]) {
 type Requests @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
-  phoneNumber: AWSPhone
+  phoneNumber: String
   emailAddress: AWSEmail
   requestType: String
   requestMessage: String
@@ -30,4 +30,5 @@ type TeamMember @model @auth(rules: [{allow: public}]) {
   position: String
   departmentId: ID
   Departments: [Department] @manyToMany(relationName: "TeamMemberDepartment")
-} 
+}
+ 
