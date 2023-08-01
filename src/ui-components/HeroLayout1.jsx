@@ -17,7 +17,6 @@ export default function HeroLayout1(props) {
   const variants = [
     {
       overrides: {
-        image: {},
         "LOREM IPSUM": {},
         "Ut enim ad minim veniam quis nostrud": {},
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.":
@@ -25,6 +24,7 @@ export default function HeroLayout1(props) {
         Message: {},
         HeroMessage: {},
         Left: {},
+        image: {},
         HeroLayout1: {},
       },
       variantValues: { mode: "Dark" },
@@ -38,8 +38,8 @@ export default function HeroLayout1(props) {
     <Flex
       gap="0"
       direction="row"
-      width="1169px"
-      height="802px"
+      width="unset"
+      height="unset"
       justifyContent="center"
       alignItems="center"
       position="relative"
@@ -48,25 +48,10 @@ export default function HeroLayout1(props) {
       {...getOverrideProps(overrides, "HeroLayout1")}
       {...rest}
     >
-      <Image
-        width="318px"
-        height="unset"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        objectFit="cover"
-        src="https://m.media-amazon.com/images/I/51pHG1lqFIL._SX300_SY300_QL70_FMwebp_.jpg"
-        {...getOverrideProps(overrides, "image")}
-      ></Image>
       <Flex
         gap="10px"
         direction="column"
-        width="847px"
+        width="951px"
         height="unset"
         justifyContent="center"
         alignItems="center"
@@ -112,7 +97,7 @@ export default function HeroLayout1(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Baba Deep Singh Ji Shaheed"
+            children="LOREM IPSUM"
             {...getOverrideProps(overrides, "LOREM IPSUM")}
           ></Text>
           <Flex
@@ -148,7 +133,7 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="A Tale of Courage, Sacrifice, and Unyielding Devotion"
+              children="Ut enim ad minim veniam quis nostrud"
               {...getOverrideProps(
                 overrides,
                 "Ut enim ad minim veniam quis nostrud"
@@ -174,7 +159,7 @@ export default function HeroLayout1(props) {
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
-              children="Baba Deep Singh Ji Shaheed, born in 1682 in Pahuwind, Punjab, was a highly respected figure in Sikh history. He exemplified the qualities of a warrior, scholar, and martyr, leaving a profound impact on Sikhism. Deeply devoted to Guru Gobind Singh, the tenth Guru of Sikhism, Baba Deep Singh Ji joined the Sikh army and actively participated in several battles against the oppressive Mughal forces. He fearlessly fought to protect the rights and freedom of the Sikh community and other oppressed groups. One of the most defining moments in Baba Deep Singh Ji's life came during the defense of Sri Harmandir Sahib, the holiest Sikh shrine in Amritsar. In 1757, when the Afghan forces attacked the sacred complex and desecrated it, Baba Deep Singh Ji led a group of Sikh soldiers in a daring confrontation. During the intense battle, Baba Deep Singh Ji exhibited unparalleled bravery and unwavering determination. Even after sustaining a fatal injury, he continued fighting with undying resolve. Legend has it that he held his severed head in his left hand while wielding a sword with his right, leading his fellow warriors until he reached the vicinity where he ultimately fell. The martyrdom of Baba Deep Singh Ji is revered as a supreme act of sacrifice and devotion within the Sikh faith. His gallant example continues to inspire Sikhs worldwide, serving as a testament to the unwavering commitment to Sikh principles, fearlessness in the face of adversity, and the eternal spirit of standing up against injustice. To this day, Baba Deep Singh Ji is honored through various Sikh ceremonies, processions, and religious events. His legacy remains an indelible part of Sikh heritage, teaching future generations about the significance of bravery, sacrifice, and unwavering faith in the pursuit of righteousness."
+              children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
               {...getOverrideProps(
                 overrides,
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
@@ -183,6 +168,20 @@ export default function HeroLayout1(props) {
           </Flex>
         </Flex>
       </Flex>
+      <Image
+        width="684px"
+        height="unset"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        shrink="0"
+        alignSelf="stretch"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        objectFit="cover"
+        {...getOverrideProps(overrides, "image")}
+      ></Image>
     </Flex>
   );
 }

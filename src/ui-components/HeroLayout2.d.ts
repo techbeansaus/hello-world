@@ -13,6 +13,8 @@ export declare type HeroLayout2OverridesProps = {
     image?: PrimitiveOverrideProps<ImageProps>;
 } & EscapeHatchProps;
 export declare type HeroLayout2Props = React.PropsWithChildren<Partial<ViewProps> & {
+    property1?: "Default" | "Variant2";
+} & {
     overrides?: HeroLayout2OverridesProps | undefined | null;
 }>;
 export default function HeroLayout2(props: HeroLayout2Props): React.ReactElement;

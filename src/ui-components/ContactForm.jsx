@@ -10,6 +10,7 @@ import {
   Button,
   Flex,
   Grid,
+  Heading,
   SelectField,
   TextField,
 } from "@aws-amplify/ui-react";
@@ -140,6 +141,10 @@ export default function ContactForm(props) {
       {...getOverrideProps(overrides, "ContactForm")}
       {...rest}
     >
+      <Heading
+        children="Contact Us"
+        {...getOverrideProps(overrides, "SectionalElement0")}
+      ></Heading>
       <TextField
         label="Name"
         isRequired={false}

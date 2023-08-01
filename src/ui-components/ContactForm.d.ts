@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { GridProps, SelectFieldProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { GridProps, HeadingProps, SelectFieldProps, TextFieldProps } from "@aws-amplify/ui-react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 export declare type ValidationResponse = {
     hasError: boolean;
@@ -29,6 +29,7 @@ export declare type ContactFormValidationValues = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type ContactFormOverridesProps = {
     ContactFormGrid?: PrimitiveOverrideProps<GridProps>;
+    SectionalElement0?: PrimitiveOverrideProps<HeadingProps>;
     name?: PrimitiveOverrideProps<TextFieldProps>;
     phoneNumber?: PrimitiveOverrideProps<TextFieldProps>;
     emailAddress?: PrimitiveOverrideProps<TextFieldProps>;

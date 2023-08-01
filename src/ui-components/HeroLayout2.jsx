@@ -6,10 +6,28 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  getOverridesFromVariants,
+  mergeVariantsAndOverrides,
+} from "@aws-amplify/ui-react/internal";
 import { Image, View } from "@aws-amplify/ui-react";
 export default function HeroLayout2(props) {
-  const { overrides, ...rest } = props;
+  const { overrides: overridesProp, ...rest } = props;
+  const variants = [
+    {
+      overrides: { image: {}, HeroLayout2: {} },
+      variantValues: { property1: "Default" },
+    },
+    {
+      overrides: { image: {}, HeroLayout2: {} },
+      variantValues: { property1: "Variant2" },
+    },
+  ];
+  const overrides = mergeVariantsAndOverrides(
+    getOverridesFromVariants(variants, props),
+    overridesProp || {}
+  );
   return (
     <View
       width="1373px"

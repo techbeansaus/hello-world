@@ -19,6 +19,7 @@ export { default as Features4x1 } from "./Features4x1";
 export { default as FeaturesText2x2 } from "./FeaturesText2x2";
 export { default as FormCheckout } from "./FormCheckout";
 export { default as HeroLayout1 } from "./HeroLayout1";
+export { default as HeroLayout1responsive } from "./HeroLayout1responsive";
 export { default as HeroLayout2 } from "./HeroLayout2";
 export { default as HeroLayout2example } from "./HeroLayout2example";
 export { default as HeroLayout3 } from "./HeroLayout3";
